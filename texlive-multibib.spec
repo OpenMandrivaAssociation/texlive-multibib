@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /macros/latex/contrib/multibib
+# catalog-date 2008-12-10 20:42:30 +0100
+# catalog-license lppl
+# catalog-version 1.4
 Name:		texlive-multibib
 Version:	1.4
 Release:	1
@@ -52,6 +58,7 @@ inlinebib, natbib, and koma-script.
 #- source
 %doc %{_texmfdistdir}/source/latex/multibib/multibib.dtx
 %doc %{_texmfdistdir}/source/latex/multibib/multibib.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -62,3 +69,5 @@ inlinebib, natbib, and koma-script.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar bibtex makeindex tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
