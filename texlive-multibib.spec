@@ -58,3 +58,17 @@ inlinebib, natbib, and koma-script.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar bibtex makeindex tex doc source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.4-2
++ Revision: 754189
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.4-1
++ Revision: 719083
+- texlive-multibib
+- texlive-multibib
+- texlive-multibib
+- texlive-multibib
+
